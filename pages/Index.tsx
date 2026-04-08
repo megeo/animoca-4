@@ -1,8 +1,7 @@
 import { useRef, useCallback } from 'react'
 import { Globe, Heart, MessageCircle } from 'lucide-react'
 
-const HERO_VIDEO_URL =
-  'https://openart-video_91069792_1775633231425.mp4'
+const HERO_VIDEO_URL = '/openart-video_91069792_1775633231425.mp4'
 
 function animateOpacity(
   el: HTMLVideoElement,
