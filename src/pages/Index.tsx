@@ -1,5 +1,5 @@
 import { useRef, useCallback } from 'react'
-import { Globe, ArrowRight, Heart, MessageCircle } from 'lucide-react'
+import { Globe, Heart, MessageCircle } from 'lucide-react'
 
 const HERO_VIDEO_URL =
   'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_074625_a81f018a-956b-43fb-9aee-4d1508e30e6a.mp4'
