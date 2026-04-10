@@ -1,7 +1,7 @@
 import { useRef, useCallback } from 'react'
 import { Globe, Heart, MessageCircle } from 'lucide-react'
 
-const HERO_VIDEO_URL = '/openart-video_91069792_1775633231425.mp4'
+const HERO_VIDEO_URL = '/storm-12.mp4'
 
 function animateOpacity(
   el: HTMLVideoElement,
@@ -65,6 +65,9 @@ export default function Index() {
         onEnded={onEnded}
       />
 
+      {/* Black overlay mask */}
+      <div className="absolute inset-0 bg-black/40 z-[1]" />
+
       {/* Navbar */}
       <nav className="relative z-20 px-6 py-6">
         <div className="liquid-glass rounded-full max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
@@ -78,7 +81,7 @@ export default function Index() {
           </div>
           <div className="flex items-center gap-4">
             <span className="text-white text-sm font-medium cursor-pointer">Contact</span>
-            <button className="liquid-glass rounded-full px-6 py-2 text-white text-sm font-medium">
+            <button className="liquid-glass rounded-full px-6 py-2 text-[#52C5E8] text-sm font-medium">
               Submit Deck
             </button>
           </div>
