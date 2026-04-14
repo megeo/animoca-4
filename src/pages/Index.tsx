@@ -66,7 +66,7 @@ export default function Index() {
       />
 
       {/* Black overlay mask */}
-      <div className="absolute inset-0 bg-black/40 z-[1]" />
+      <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0))' }} />
 
       {/* Navbar */}
       <nav className="relative z-20 px-6 py-6">
