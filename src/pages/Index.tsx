@@ -94,7 +94,7 @@ export default function Index() {
           className="text-7xl md:text-8xl lg:text-9xl text-white tracking-tight whitespace-nowrap"
           style={{ fontFamily: "'Instrument Serif', serif" }}
         >  
-          At The<br />Frontier of <em className="italic">Intelligent Systems</em>
+          At The Frontier of<br /><em className="italic">Intelligent Systems</em>
         </h1>
 
         <p className="text-white text-sm leading-relaxed px-4 mt-6 max-w-xl">
