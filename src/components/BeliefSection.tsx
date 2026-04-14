@@ -14,8 +14,14 @@ export default function BeliefSection() {
         src={VIDEO_URL}
         muted
         autoPlay
-        loop
         playsInline
+        onTimeUpdate={(e) => {
+          const v = e.currentTarget
+          if (v.duration && v.currentTime >= v.duration - 0.3) {
+            v.currentTime = 0
+            v.play()
+          }
+        }}
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
       />
 

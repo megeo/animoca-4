@@ -54,9 +54,15 @@ export default function PhilosophySection() {
               ref={videoRef}
               muted
               autoPlay
-              loop
               playsInline
               preload="auto"
+              onTimeUpdate={(e) => {
+                const v = e.currentTarget
+                if (v.duration && v.currentTime >= v.duration - 0.3) {
+                  v.currentTime = 0
+                  v.play()
+                }
+              }}
               className="w-full h-full object-cover"
             />
           </motion.div>
